@@ -4,6 +4,7 @@
 !CONTINUITY.md
 !PLAN.md
 !DEMO_SPEC.md
+!prototypes/**/*.md
 
 # Node / Expo
 node_modules/
@@ -15,6 +16,10 @@ web-build/
 # Go
 backend/bin/
 *.test
+
+# Amp
+.amp/portals/
+.amp/in/artifacts/
 
 # OS / editor
 .DS_Store

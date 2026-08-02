@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+GO_VERSION=1.22.12
+GO_ROOT="$HOME/.local/go"
+
+if [[ ! -x "$GO_ROOT/bin/go" ]]; then
+  mkdir -p "$HOME/.local"
+  curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" -o /tmp/go.tgz
+  rm -rf "$GO_ROOT"
+  tar -C "$HOME/.local" -xzf /tmp/go.tgz
+  rm /tmp/go.tgz
+fi
+
+mkdir -p "$HOME/.local/bin"
+ln -sf "$GO_ROOT/bin/go" "$HOME/.local/bin/go"
+ln -sf "$GO_ROOT/bin/gofmt" "$HOME/.local/bin/gofmt"
+
+npm install

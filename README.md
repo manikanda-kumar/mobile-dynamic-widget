@@ -33,9 +33,10 @@ changes with no app rebuild.
 ## Layout
 
 ```
-backend/   Go manifest API — rules engine, experiments, feature flags, analytics (in-memory)
-  data/    seed JSON: widgets, layouts, themes, rules, experiments, flags, users
-mobile/    Expo RN renderer — registry of 14 widget types + 5 section layouts
+backend/      Go manifest API — rules engine, experiments, feature flags, analytics (in-memory)
+  data/       seed JSON: widgets, layouts, themes, rules, experiments, flags, users
+mobile/       Expo RN renderer — registry of 14 widget types + 5 section layouts
+prototypes/   earlier independent takes on the same brief, kept for reference
 ```
 
 ## Test
@@ -44,3 +45,10 @@ mobile/    Expo RN renderer — registry of 14 widget types + 5 section layouts
 cd backend && go test ./...
 cd mobile   && npx tsc --noEmit
 ```
+
+## Other prototypes
+
+[`prototypes/amp-experience/`](prototypes/amp-experience/README.md) is a separate implementation of
+the same brief — an experience API plus customer-facts / campaign-outcomes / journey-state mock
+services, with its own React Native renderer. It is a self-contained Go module and is not wired
+into the demo above; see its README to run it.
