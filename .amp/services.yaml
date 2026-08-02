@@ -1,0 +1,26 @@
+services:
+  customer-facts:
+    command: /home/user/.local/go/bin/go -C backend run ./cmd/customer-facts-mock
+    port: 8091
+    healthcheck:
+      path: /health
+  campaign-outcomes:
+    command: /home/user/.local/go/bin/go -C backend run ./cmd/campaign-outcomes-mock
+    port: 8092
+    healthcheck:
+      path: /health
+  journey-state:
+    command: /home/user/.local/go/bin/go -C backend run ./cmd/journey-state-mock
+    port: 8093
+    healthcheck:
+      path: /health
+  experience-api:
+    command: /home/user/.local/go/bin/go -C backend run ./cmd/experience-api
+    port: 8090
+    healthcheck:
+      path: /health
+  app:
+    command: npm run web -- --port 8082
+    port: 8082
+    healthcheck:
+      path: /
