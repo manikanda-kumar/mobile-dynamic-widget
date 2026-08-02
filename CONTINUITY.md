@@ -63,9 +63,15 @@ README documents both run commands.
   fixture, unknown `crypto_ticker` type and `masonry` layout warn-and-skip. Screenshots inspected.
 - Wrote root `README.md`; committed everything as e6ce633 (67 files)
 
+- Remote `main` had diverged: an independent Amp-built prototype (`5ddfc6c`, own Go module
+  `dynamicwidget/backend` + root-level RN app). Per user's call, merged with ours canonical —
+  that work relocated to `prototypes/amp-experience/` (self-contained module, still builds and
+  tests green); `.gitignore`/`README.md` resolved to ours plus their `.amp` ignore rules
+- Pushed to origin/main as `a7672db`; local and remote in sync
+
 ### Now
 
-- Demo is complete and committed. Backend :8080 and Expo web :8082 left running for the user.
+- Demo complete, merged and pushed. Backend :8080 and Expo web :8082 left running for the user.
 
 ### Next
 
