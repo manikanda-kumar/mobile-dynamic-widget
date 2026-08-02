@@ -57,18 +57,22 @@ README documents both run commands.
   without crashing
 - Mobile agent stopped the Expo dev server it started (port 8082 free)
 
+- Joint pass run by me (not just agent claim): `npx tsc --noEmit` clean; Playwright at 390x844
+  against live backend — all 5 users render distinct themes/sections/widgets, Debug overlay shows
+  `P88 base 88 · ml 0 · kyc · 2x1` + applied-rule chips, offline route-abort falls back to bundled
+  fixture, unknown `crypto_ticker` type and `masonry` layout warn-and-skip. Screenshots inspected.
+- Wrote root `README.md`; committed everything as e6ce633 (67 files)
+
 ### Now
 
-- Both build agents have reported. Ready for the joint backend+mobile browser pass.
+- Demo is complete and committed. Backend :8080 and Expo web :8082 left running for the user.
 
 ### Next
 
-- Run backend + mobile together, verify user switching / experiment variant / analytics in browser
 - Optional polish: backend can populate the renderer's already-supported optional `data` fields
   (`stats`, `items`, `series`, `delta`/`deltaDirection`, `progressLabel`, `footnote`) to densify
   fd / payments / kyc / investments / cashback cards with no app change
-- Write root `README.md` with run commands
-- Commit
+- Optional: push to origin (not pushed yet)
 
 ## Open questions
 
