@@ -145,8 +145,7 @@ Track
 
 Backend
 
-- Kotlin
-- Spring Boot
+- Go
 - PostgreSQL
 - Redis
 - Kafka

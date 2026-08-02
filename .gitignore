@@ -1,0 +1,22 @@
+# Markdown: ignore all except the exempted files below
+*.md
+!README.md
+!CONTINUITY.md
+!PLAN.md
+!DEMO_SPEC.md
+
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+
+# Go
+backend/bin/
+*.test
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

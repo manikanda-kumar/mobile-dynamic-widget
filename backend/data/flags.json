@@ -1,0 +1,8 @@
+{
+  "fd_widget_v2": { "enabled": true, "segments": [] },
+  "loan_topup_v2": { "enabled": true, "segments": ["premium"] },
+  "rewards_tier_v2": { "enabled": true, "segments": ["premium", "loyal"] },
+  "portfolio_card_v1": { "enabled": true, "segments": ["premium", "loyal", "mass_affluent"] },
+  "pledge_securities_v1": { "enabled": true, "segments": [] },
+  "gold_loan_beta": { "enabled": false, "segments": ["premium"] }
+}

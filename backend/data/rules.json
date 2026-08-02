@@ -1,0 +1,269 @@
+[
+  {
+    "id": "r_show_birthday_today",
+    "widgetType": "birthday",
+    "when": [{ "field": "birthdayToday", "op": "eq", "value": true }],
+    "effect": { "action": "show" }
+  },
+  {
+    "id": "r_pin_birthday_hero",
+    "widgetType": "birthday",
+    "when": [{ "field": "birthdayToday", "op": "eq", "value": true }],
+    "effect": { "action": "pin", "section": "sec_hero" }
+  },
+  {
+    "id": "r_show_anniversary_today",
+    "widgetType": "anniversary",
+    "when": [{ "field": "anniversaryToday", "op": "eq", "value": true }],
+    "effect": { "action": "show" }
+  },
+  {
+    "id": "r_pin_anniversary_hero",
+    "widgetType": "anniversary",
+    "when": [{ "field": "anniversaryToday", "op": "eq", "value": true }],
+    "effect": { "action": "pin", "section": "sec_hero" }
+  },
+  {
+    "id": "r_hide_kyc_when_verified",
+    "widgetType": "kyc",
+    "when": [{ "field": "kycStatus", "op": "in", "value": ["verified", "in_review"] }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_pin_kyc_when_pending",
+    "widgetType": "kyc",
+    "when": [{ "field": "kycStatus", "op": "eq", "value": "pending" }],
+    "effect": { "action": "pin", "section": "sec_onboarding" }
+  },
+  {
+    "id": "r_hide_kyc_for_guest",
+    "widgetType": "kyc",
+    "when": [{ "field": "segment", "op": "eq", "value": "guest" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_vkyc_when_verified",
+    "widgetType": "vkyc",
+    "when": [{ "field": "kycStatus", "op": "in", "value": ["verified", "in_review"] }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_pin_vkyc_when_pending",
+    "widgetType": "vkyc",
+    "when": [{ "field": "kycStatus", "op": "eq", "value": "pending" }],
+    "effect": { "action": "pin", "section": "sec_onboarding" }
+  },
+  {
+    "id": "r_hide_vkyc_for_guest",
+    "widgetType": "vkyc",
+    "when": [{ "field": "segment", "op": "eq", "value": "guest" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_email_verification_done",
+    "widgetType": "email_verification",
+    "when": [{ "field": "emailVerified", "op": "eq", "value": true }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_pin_email_verification",
+    "widgetType": "email_verification",
+    "when": [
+      { "field": "emailVerified", "op": "eq", "value": false },
+      { "field": "segment", "op": "nin", "value": ["guest"] }
+    ],
+    "effect": { "action": "pin", "section": "sec_onboarding" }
+  },
+  {
+    "id": "r_hide_email_verification_guest",
+    "widgetType": "email_verification",
+    "when": [{ "field": "segment", "op": "eq", "value": "guest" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_mobile_verification_done",
+    "widgetType": "mobile_verification",
+    "when": [{ "field": "mobileVerified", "op": "eq", "value": true }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_pin_mobile_verification",
+    "widgetType": "mobile_verification",
+    "when": [
+      { "field": "mobileVerified", "op": "eq", "value": false },
+      { "field": "segment", "op": "nin", "value": ["guest"] }
+    ],
+    "effect": { "action": "pin", "section": "sec_onboarding" }
+  },
+  {
+    "id": "r_hide_mobile_verification_guest",
+    "widgetType": "mobile_verification",
+    "when": [{ "field": "segment", "op": "eq", "value": "guest" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_loan_high_risk",
+    "widgetType": "loan_offer",
+    "when": [{ "field": "riskBand", "op": "in", "value": ["high", "very_high"] }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_loan_thin_file",
+    "widgetType": "loan_offer",
+    "when": [{ "field": "segment", "op": "eq", "value": "thin_file" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_loan_kyc_incomplete",
+    "widgetType": "loan_offer",
+    "when": [{ "field": "kycStatus", "op": "in", "value": ["pending", "none", "rejected"] }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_loan_guest",
+    "widgetType": "loan_offer",
+    "when": [{ "field": "segment", "op": "eq", "value": "guest" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_boost_loan_high_ml",
+    "widgetType": "loan_offer",
+    "when": [{ "field": "mlScores.loan_offer", "op": "gte", "value": 0.7 }],
+    "effect": { "action": "boost", "value": 18 }
+  },
+  {
+    "id": "r_hide_card_high_risk",
+    "widgetType": "credit_card_offer",
+    "when": [{ "field": "riskBand", "op": "in", "value": ["high", "very_high"] }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_card_thin_file",
+    "widgetType": "credit_card_offer",
+    "when": [{ "field": "segment", "op": "eq", "value": "thin_file" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_hide_card_kyc_incomplete",
+    "widgetType": "credit_card_offer",
+    "when": [{ "field": "kycStatus", "op": "neq", "value": "verified" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_penalize_card_when_owned",
+    "widgetType": "credit_card_offer",
+    "when": [{ "field": "productsOwned", "op": "contains", "value": "credit_card" }],
+    "effect": { "action": "penalize", "value": 22 }
+  },
+  {
+    "id": "r_boost_card_high_bureau",
+    "widgetType": "credit_card_offer",
+    "when": [{ "field": "creditScore", "op": "gt", "value": 750 }],
+    "effect": { "action": "boost", "value": 12 }
+  },
+  {
+    "id": "r_boost_fd_risk_averse",
+    "widgetType": "fd",
+    "when": [{ "field": "riskBand", "op": "in", "value": ["medium", "high", "very_high", "unknown"] }],
+    "effect": { "action": "boost", "value": 24, "section": "sec_products" }
+  },
+  {
+    "id": "r_boost_fd_already_owned",
+    "widgetType": "fd",
+    "when": [{ "field": "productsOwned", "op": "contains", "value": "fd" }],
+    "effect": { "action": "boost", "value": 8 }
+  },
+  {
+    "id": "r_boost_fd_low_income",
+    "widgetType": "fd",
+    "when": [{ "field": "monthlyIncomeInr", "op": "lte", "value": 70000 }],
+    "effect": { "action": "boost", "value": 10 }
+  },
+  {
+    "id": "r_boost_fd_calculator_intent",
+    "widgetId": "w_fd_booster",
+    "when": [{ "field": "recentActivity", "op": "contains", "value": "fd_calculator" }],
+    "effect": { "action": "boost", "value": 20 }
+  },
+  {
+    "id": "r_boost_pledge_thin_file",
+    "widgetType": "pledge",
+    "when": [{ "field": "segment", "op": "in", "value": ["thin_file", "new"] }],
+    "effect": { "action": "boost", "value": 30 }
+  },
+  {
+    "id": "r_penalize_pledge_premium",
+    "widgetType": "pledge",
+    "when": [{ "field": "segment", "op": "eq", "value": "premium" }],
+    "effect": { "action": "penalize", "value": 25 }
+  },
+  {
+    "id": "r_boost_pledge_gold_intent",
+    "widgetId": "w_pledge_gold",
+    "when": [{ "field": "recentActivity", "op": "contains", "value": "gold_loan_enquiry" }],
+    "effect": { "action": "boost", "value": 35 }
+  },
+  {
+    "id": "r_boost_investments_premium",
+    "widgetType": "investments",
+    "when": [{ "field": "segment", "op": "eq", "value": "premium" }],
+    "effect": { "action": "boost", "value": 35 }
+  },
+  {
+    "id": "r_boost_investments_strong_score",
+    "widgetType": "investments",
+    "when": [
+      { "field": "mlScores.investments", "op": "exists", "value": true },
+      { "field": "mlScores.investments", "op": "gte", "value": 0.8 }
+    ],
+    "effect": { "action": "boost", "value": 10 }
+  },
+  {
+    "id": "r_penalize_investments_early_tenure",
+    "widgetType": "investments",
+    "when": [{ "field": "segment", "op": "in", "value": ["new", "thin_file"] }],
+    "effect": { "action": "penalize", "value": 30 }
+  },
+  {
+    "id": "r_show_portfolio_when_invested",
+    "widgetType": "investments",
+    "when": [{ "field": "productsOwned", "op": "contains", "value": "investments" }],
+    "effect": { "action": "show" }
+  },
+  {
+    "id": "r_boost_rewards_loyal",
+    "widgetType": "rewards",
+    "when": [{ "field": "segment", "op": "in", "value": ["premium", "loyal"] }],
+    "effect": { "action": "boost", "value": 20 }
+  },
+  {
+    "id": "r_hide_rewards_guest",
+    "widgetType": "rewards",
+    "when": [{ "field": "segment", "op": "eq", "value": "guest" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_boost_cashback_upi_active",
+    "widgetType": "cashback",
+    "when": [{ "field": "recentActivity", "op": "contains", "value": "upi_payment" }],
+    "effect": { "action": "boost", "value": 26 }
+  },
+  {
+    "id": "r_hide_cashback_guest",
+    "widgetType": "cashback",
+    "when": [{ "field": "segment", "op": "eq", "value": "guest" }],
+    "effect": { "action": "hide" }
+  },
+  {
+    "id": "r_boost_payments_upi_active",
+    "widgetType": "payments",
+    "when": [{ "field": "recentActivity", "op": "contains", "value": "upi_payment" }],
+    "effect": { "action": "boost", "value": 18 }
+  },
+  {
+    "id": "r_boost_payments_new_customer",
+    "widgetType": "payments",
+    "when": [{ "field": "tenureMonths", "op": "lt", "value": 3 }],
+    "effect": { "action": "boost", "value": 12 }
+  }
+]

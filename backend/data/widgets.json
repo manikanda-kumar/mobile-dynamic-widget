@@ -1,0 +1,406 @@
+[
+  {
+    "id": "w_birthday_wish",
+    "type": "birthday",
+    "section": "sec_hero",
+    "priority": 70,
+    "size": "3x1",
+    "defaultVisible": false,
+    "data": {
+      "title": "Happy birthday, from all of us!",
+      "subtitle": "Your gift: 5% extra cashback on every UPI spend today",
+      "badge": "Today only",
+      "icon": "birthday",
+      "imageUrl": null,
+      "progress": null,
+      "amount": null,
+      "cta": { "label": "Claim gift", "action": "navigate", "target": "rewards/birthday/BDAY26" }
+    },
+    "analytics": { "impressionKey": "birthday::BDAY26", "experimentId": null }
+  },
+  {
+    "id": "w_anniversary_wish",
+    "type": "anniversary",
+    "section": "sec_hero",
+    "priority": 66,
+    "size": "3x1",
+    "defaultVisible": false,
+    "data": {
+      "title": "1 year of banking with us",
+      "subtitle": "Unlock an anniversary FD rate of 7.85% p.a. this week",
+      "badge": "Anniversary",
+      "icon": "anniversary",
+      "imageUrl": null,
+      "progress": null,
+      "amount": null,
+      "cta": { "label": "See offer", "action": "navigate", "target": "fd/anniversary/ANNV26" }
+    },
+    "analytics": { "impressionKey": "anniversary::ANNV26", "experimentId": null }
+  },
+  {
+    "id": "w_kyc_complete",
+    "type": "kyc",
+    "section": "sec_onboarding",
+    "priority": 88,
+    "size": "2x1",
+    "data": {
+      "title": "Complete your full KYC",
+      "subtitle": "Aadhaar + PAN · takes about 3 minutes",
+      "badge": "Required",
+      "icon": "kyc",
+      "imageUrl": null,
+      "progress": 0.35,
+      "amount": null,
+      "cta": { "label": "Start KYC", "action": "navigate", "target": "onboarding/kyc" }
+    },
+    "analytics": { "impressionKey": "kyc::full_kyc", "experimentId": null }
+  },
+  {
+    "id": "w_vkyc_schedule",
+    "type": "vkyc",
+    "section": "sec_onboarding",
+    "priority": 84,
+    "size": "2x1",
+    "data": {
+      "title": "Book your video KYC slot",
+      "subtitle": "Agents available 9 AM – 9 PM IST · keep PAN handy",
+      "badge": "2 min call",
+      "icon": "vkyc",
+      "imageUrl": null,
+      "progress": null,
+      "amount": null,
+      "cta": { "label": "Book slot", "action": "navigate", "target": "onboarding/vkyc/schedule" }
+    },
+    "analytics": { "impressionKey": "vkyc::schedule", "experimentId": null }
+  },
+  {
+    "id": "w_email_verify",
+    "type": "email_verification",
+    "section": "sec_onboarding",
+    "priority": 80,
+    "size": "2x1",
+    "data": {
+      "title": "Verify your email",
+      "subtitle": "We sent a link to a***n@gmail.com",
+      "badge": "Pending",
+      "icon": "email",
+      "imageUrl": null,
+      "progress": null,
+      "amount": null,
+      "cta": { "label": "Resend link", "action": "api", "target": "verify/email/resend" }
+    },
+    "analytics": { "impressionKey": "email_verification::pending", "experimentId": null }
+  },
+  {
+    "id": "w_mobile_verify",
+    "type": "mobile_verification",
+    "section": "sec_onboarding",
+    "priority": 78,
+    "size": "2x1",
+    "data": {
+      "title": "Verify your mobile number",
+      "subtitle": "OTP to +91 ••••• 47213 · needed for UPI",
+      "badge": "Pending",
+      "icon": "mobile",
+      "imageUrl": null,
+      "progress": null,
+      "amount": null,
+      "cta": { "label": "Send OTP", "action": "api", "target": "verify/mobile/otp" }
+    },
+    "analytics": { "impressionKey": "mobile_verification::pending", "experimentId": null }
+  },
+  {
+    "id": "w_loan_offer_preapproved",
+    "type": "loan_offer",
+    "section": "sec_offers",
+    "priority": 82,
+    "size": "2x1",
+    "data": {
+      "title": "Pre-approved ₹5,00,000",
+      "subtitle": "Rate from 10.5% · Disbursal in 2 hours",
+      "badge": "Pre-approved",
+      "icon": "loan",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹5,00,000",
+      "cta": { "label": "Check offer", "action": "navigate", "target": "loan/offer/OFF123" }
+    },
+    "analytics": { "impressionKey": "loan_offer::OFF123", "experimentId": "exp_offer_position" }
+  },
+  {
+    "id": "w_loan_topup",
+    "type": "loan_offer",
+    "section": "sec_offers",
+    "priority": 64,
+    "size": "2x1",
+    "flag": "loan_topup_v2",
+    "data": {
+      "title": "Top-up your personal loan",
+      "subtitle": "Additional ₹1,50,000 at 10.9% · no fresh paperwork",
+      "badge": "Top-up",
+      "icon": "loan",
+      "imageUrl": null,
+      "progress": 0.62,
+      "amount": "₹1,50,000",
+      "cta": { "label": "View top-up", "action": "navigate", "target": "loan/topup/TOP447" }
+    },
+    "analytics": { "impressionKey": "loan_offer::TOP447", "experimentId": "exp_offer_position" }
+  },
+  {
+    "id": "w_credit_card_platinum",
+    "type": "credit_card_offer",
+    "section": "sec_offers",
+    "priority": 76,
+    "size": "2x1",
+    "data": {
+      "title": "Platinum Rewards Card",
+      "subtitle": "₹5,00,000 limit · 5X points on dining & travel",
+      "badge": "Lifetime free",
+      "icon": "credit_card",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹5,00,000",
+      "cta": { "label": "Apply now", "action": "navigate", "target": "cards/apply/PLAT01" }
+    },
+    "analytics": { "impressionKey": "credit_card_offer::PLAT01", "experimentId": null }
+  },
+  {
+    "id": "w_pledge_gold",
+    "type": "pledge",
+    "section": "sec_offers",
+    "priority": 68,
+    "size": "2x1",
+    "data": {
+      "title": "Gold loan at 9.25% p.a.",
+      "subtitle": "Pledge gold, get up to 75% LTV · doorstep valuation",
+      "badge": "Instant",
+      "icon": "pledge",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹2,00,000",
+      "cta": { "label": "Check eligibility", "action": "navigate", "target": "pledge/gold/GLD77" }
+    },
+    "analytics": { "impressionKey": "pledge::GLD77", "experimentId": null }
+  },
+  {
+    "id": "w_fd_booster",
+    "type": "fd",
+    "section": "sec_products",
+    "priority": 72,
+    "size": "2x1",
+    "flag": "fd_widget_v2",
+    "data": {
+      "title": "Booster FD at 7.60% p.a.",
+      "subtitle": "444-day tenure · senior citizens get 7.95%",
+      "badge": "High yield",
+      "icon": "fd",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹25,000 min",
+      "cta": { "label": "Open FD", "action": "navigate", "target": "fd/open/BOOST444" }
+    },
+    "analytics": { "impressionKey": "fd::BOOST444", "experimentId": "exp_fd_copy" }
+  },
+  {
+    "id": "w_fd_tax_saver",
+    "type": "fd",
+    "section": "sec_products",
+    "priority": 58,
+    "size": "2x1",
+    "data": {
+      "title": "Tax Saver FD · 80C",
+      "subtitle": "5-year lock-in · save up to ₹46,800 in tax",
+      "badge": "80C",
+      "icon": "fd",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹1,50,000 cap",
+      "cta": { "label": "Start saving", "action": "navigate", "target": "fd/open/TAX80C" }
+    },
+    "analytics": { "impressionKey": "fd::TAX80C", "experimentId": "exp_fd_copy" }
+  },
+  {
+    "id": "w_pledge_securities",
+    "type": "pledge",
+    "section": "sec_products",
+    "priority": 60,
+    "size": "2x1",
+    "flag": "pledge_securities_v1",
+    "data": {
+      "title": "Loan against mutual funds",
+      "subtitle": "Pledge units, keep earning returns · from 10.2%",
+      "badge": "No exit load",
+      "icon": "pledge",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹10,00,000 max",
+      "cta": { "label": "Pledge units", "action": "navigate", "target": "pledge/mf/LAMF21" }
+    },
+    "analytics": { "impressionKey": "pledge::LAMF21", "experimentId": null }
+  },
+  {
+    "id": "w_investments_sip",
+    "type": "investments",
+    "section": "sec_products",
+    "priority": 74,
+    "size": "2x1",
+    "data": {
+      "title": "Start a SIP from ₹500",
+      "subtitle": "Nifty 50 index fund · 3Y CAGR 16.4%",
+      "badge": "Popular",
+      "icon": "investments",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹500/month",
+      "cta": { "label": "Start SIP", "action": "navigate", "target": "invest/sip/NIFTY50" }
+    },
+    "analytics": { "impressionKey": "investments::NIFTY50", "experimentId": null }
+  },
+  {
+    "id": "w_investments_portfolio",
+    "type": "investments",
+    "section": "sec_products",
+    "priority": 70,
+    "size": "2x2",
+    "flag": "portfolio_card_v1",
+    "defaultVisible": false,
+    "data": {
+      "title": "Portfolio up 12.8% this year",
+      "subtitle": "3 SIPs running · next debit 5 Aug",
+      "badge": "Your money",
+      "icon": "portfolio",
+      "imageUrl": null,
+      "progress": 0.72,
+      "amount": "₹8,42,150",
+      "cta": { "label": "View portfolio", "action": "navigate", "target": "invest/portfolio" }
+    },
+    "analytics": { "impressionKey": "investments::portfolio", "experimentId": null }
+  },
+  {
+    "id": "w_payments_upi",
+    "type": "payments",
+    "section": "sec_quick_actions",
+    "priority": 66,
+    "size": "1x1",
+    "data": {
+      "title": "Scan & pay",
+      "subtitle": "UPI · any QR",
+      "badge": null,
+      "icon": "qr",
+      "imageUrl": null,
+      "progress": null,
+      "amount": null,
+      "cta": { "label": "Scan", "action": "navigate", "target": "payments/upi/scan" }
+    },
+    "analytics": { "impressionKey": "payments::upi_scan", "experimentId": null }
+  },
+  {
+    "id": "w_payments_bills",
+    "type": "payments",
+    "section": "sec_quick_actions",
+    "priority": 62,
+    "size": "1x1",
+    "data": {
+      "title": "Pay bills",
+      "subtitle": "Electricity due ₹2,340",
+      "badge": "1 due",
+      "icon": "bill",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹2,340",
+      "cta": { "label": "Pay", "action": "navigate", "target": "payments/bills" }
+    },
+    "analytics": { "impressionKey": "payments::bills", "experimentId": null }
+  },
+  {
+    "id": "w_payments_recharge",
+    "type": "payments",
+    "section": "sec_quick_actions",
+    "priority": 55,
+    "size": "1x1",
+    "data": {
+      "title": "Recharge",
+      "subtitle": "Mobile & DTH",
+      "badge": null,
+      "icon": "recharge",
+      "imageUrl": null,
+      "progress": null,
+      "amount": null,
+      "cta": { "label": "Recharge", "action": "navigate", "target": "payments/recharge" }
+    },
+    "analytics": { "impressionKey": "payments::recharge", "experimentId": null }
+  },
+  {
+    "id": "w_rewards_points",
+    "type": "rewards",
+    "section": "sec_rewards",
+    "priority": 70,
+    "size": "2x1",
+    "data": {
+      "title": "12,480 reward points",
+      "subtitle": "Worth ₹3,120 · 1,200 points expire on 31 Aug",
+      "badge": "Expiring",
+      "icon": "rewards",
+      "imageUrl": null,
+      "progress": 0.44,
+      "amount": "₹3,120",
+      "cta": { "label": "Redeem", "action": "navigate", "target": "rewards/catalogue" }
+    },
+    "analytics": { "impressionKey": "rewards::points", "experimentId": "exp_rewards_layout" }
+  },
+  {
+    "id": "w_rewards_tier",
+    "type": "rewards",
+    "section": "sec_rewards",
+    "priority": 56,
+    "size": "1x1",
+    "flag": "rewards_tier_v2",
+    "data": {
+      "title": "Gold tier",
+      "subtitle": "₹18,000 more spend to reach Platinum",
+      "badge": "Tier",
+      "icon": "tier",
+      "imageUrl": null,
+      "progress": 0.81,
+      "amount": null,
+      "cta": { "label": "See benefits", "action": "navigate", "target": "rewards/tier" }
+    },
+    "analytics": { "impressionKey": "rewards::tier", "experimentId": "exp_rewards_layout" }
+  },
+  {
+    "id": "w_cashback_offers",
+    "type": "cashback",
+    "section": "sec_rewards",
+    "priority": 68,
+    "size": "2x1",
+    "data": {
+      "title": "10% cashback on Swiggy & BigBasket",
+      "subtitle": "Max ₹150 per order · valid till 31 Aug",
+      "badge": "Limited",
+      "icon": "cashback",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹150 max",
+      "cta": { "label": "Activate", "action": "api", "target": "cashback/activate/CB910" }
+    },
+    "analytics": { "impressionKey": "cashback::CB910", "experimentId": "exp_rewards_layout" }
+  },
+  {
+    "id": "w_cashback_wallet",
+    "type": "cashback",
+    "section": "sec_rewards",
+    "priority": 54,
+    "size": "1x1",
+    "data": {
+      "title": "₹640 cashback earned",
+      "subtitle": "Credited to savings on 1 Sep",
+      "badge": null,
+      "icon": "wallet",
+      "imageUrl": null,
+      "progress": null,
+      "amount": "₹640",
+      "cta": { "label": "View history", "action": "navigate", "target": "cashback/history" }
+    },
+    "analytics": { "impressionKey": "cashback::wallet", "experimentId": "exp_rewards_layout" }
+  }
+]

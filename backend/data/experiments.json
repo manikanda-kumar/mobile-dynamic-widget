@@ -1,0 +1,53 @@
+[
+  {
+    "id": "exp_offer_position",
+    "name": "Loan offer placement (variant B ramped to 75%)",
+    "enabled": true,
+    "targets": ["loan_offer"],
+    "variants": [
+      { "id": "A", "weight": 25, "effects": [] },
+      {
+        "id": "B",
+        "weight": 75,
+        "effects": [{ "widgetType": "loan_offer", "boost": 40, "section": "sec_hero" }]
+      }
+    ]
+  },
+  {
+    "id": "exp_rewards_layout",
+    "name": "Rewards vs cashback emphasis",
+    "enabled": true,
+    "targets": ["rewards", "cashback"],
+    "variants": [
+      { "id": "A", "weight": 50, "effects": [] },
+      {
+        "id": "B",
+        "weight": 50,
+        "effects": [
+          { "widgetType": "rewards", "boost": 25 },
+          { "widgetType": "cashback", "boost": 10, "section": "sec_offers" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "exp_fd_copy",
+    "name": "FD card copy emphasis",
+    "enabled": true,
+    "targets": ["fd"],
+    "variants": [
+      { "id": "control", "weight": 34, "effects": [] },
+      { "id": "yield_first", "weight": 33, "effects": [{ "widgetType": "fd", "boost": 18 }] },
+      { "id": "safety_first", "weight": 33, "effects": [{ "widgetType": "fd", "boost": -12 }] }
+    ]
+  },
+  {
+    "id": "exp_legacy_disabled",
+    "name": "Disabled experiment (should never be assigned)",
+    "enabled": false,
+    "targets": ["pledge"],
+    "variants": [
+      { "id": "A", "weight": 100, "effects": [{ "widgetType": "pledge", "hide": true }] }
+    ]
+  }
+]

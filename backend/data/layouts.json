@@ -1,0 +1,38 @@
+[
+  {
+    "id": "home_v2",
+    "name": "Home v2",
+    "theme": "banking_dark",
+    "sections": [
+      { "id": "sec_hero", "layout": "banner", "title": null },
+      { "id": "sec_onboarding", "layout": "vertical", "title": "Finish setting up" },
+      { "id": "sec_offers", "layout": "carousel", "title": "For you" },
+      { "id": "sec_quick_actions", "layout": "grid", "title": "Quick actions", "columns": 3 },
+      { "id": "sec_products", "layout": "horizontal", "title": "Grow your money" },
+      { "id": "sec_rewards", "layout": "grid", "title": "Rewards & cashback", "columns": 2 }
+    ]
+  },
+  {
+    "id": "home_onboarding",
+    "name": "Home Onboarding",
+    "theme": "banking_light",
+    "sections": [
+      { "id": "sec_hero", "layout": "banner", "title": null },
+      { "id": "sec_onboarding", "layout": "vertical", "title": "Complete your account" },
+      { "id": "sec_quick_actions", "layout": "grid", "title": "Quick actions", "columns": 3 },
+      { "id": "sec_offers", "layout": "carousel", "title": "For you" },
+      { "id": "sec_products", "layout": "horizontal", "title": "Grow your money" },
+      { "id": "sec_rewards", "layout": "grid", "title": "Rewards & cashback", "columns": 2 }
+    ]
+  },
+  {
+    "id": "home_guest",
+    "name": "Home Guest",
+    "theme": "guest_neutral",
+    "sections": [
+      { "id": "sec_hero", "layout": "banner", "title": null },
+      { "id": "sec_quick_actions", "layout": "grid", "title": "Quick actions", "columns": 3 },
+      { "id": "sec_products", "layout": "horizontal", "title": "Explore products" }
+    ]
+  }
+]

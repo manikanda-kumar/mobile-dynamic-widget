@@ -1,0 +1,97 @@
+[
+  {
+    "id": "banking_dark",
+    "name": "Banking Dark",
+    "colors": {
+      "background": "#0B1120",
+      "surface": "#151E2E",
+      "surfaceAlt": "#1E2A3E",
+      "primary": "#4F8DF7",
+      "onPrimary": "#FFFFFF",
+      "text": "#F2F5FA",
+      "textMuted": "#94A3B8",
+      "border": "#243449",
+      "success": "#34D399",
+      "warning": "#FBBF24",
+      "danger": "#F87171"
+    },
+    "radius": 16,
+    "spacing": 12
+  },
+  {
+    "id": "banking_light",
+    "name": "Banking Light",
+    "colors": {
+      "background": "#F5F8FC",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#EDF2FA",
+      "primary": "#1D4ED8",
+      "onPrimary": "#FFFFFF",
+      "text": "#0F172A",
+      "textMuted": "#64748B",
+      "border": "#DCE5F0",
+      "success": "#059669",
+      "warning": "#D97706",
+      "danger": "#DC2626"
+    },
+    "radius": 14,
+    "spacing": 12
+  },
+  {
+    "id": "festive_gold",
+    "name": "Festive Gold",
+    "colors": {
+      "background": "#1A1206",
+      "surface": "#2A1E0B",
+      "surfaceAlt": "#3A2A10",
+      "primary": "#E0A227",
+      "onPrimary": "#1A1206",
+      "text": "#FDF6E3",
+      "textMuted": "#C7B48A",
+      "border": "#4A3616",
+      "success": "#4ADE80",
+      "warning": "#FACC15",
+      "danger": "#FB7185"
+    },
+    "radius": 20,
+    "spacing": 14
+  },
+  {
+    "id": "trust_teal",
+    "name": "Trust Teal",
+    "colors": {
+      "background": "#052F2E",
+      "surface": "#0B403E",
+      "surfaceAlt": "#12504D",
+      "primary": "#14B8A6",
+      "onPrimary": "#04211F",
+      "text": "#ECFDF5",
+      "textMuted": "#8FB3AE",
+      "border": "#17605C",
+      "success": "#34D399",
+      "warning": "#FBBF24",
+      "danger": "#F87171"
+    },
+    "radius": 12,
+    "spacing": 12
+  },
+  {
+    "id": "guest_neutral",
+    "name": "Guest Neutral",
+    "colors": {
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "surfaceAlt": "#F1F5F9",
+      "primary": "#334155",
+      "onPrimary": "#FFFFFF",
+      "text": "#0F172A",
+      "textMuted": "#64748B",
+      "border": "#E2E8F0",
+      "success": "#16A34A",
+      "warning": "#CA8A04",
+      "danger": "#DC2626"
+    },
+    "radius": 10,
+    "spacing": 10
+  }
+]
